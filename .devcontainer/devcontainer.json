@@ -13,7 +13,7 @@
             ]
         }
     },
-    "postCreateCommand": "curl --proto '=https' --tlsv1.2 -sSf https://shuttle.rs/install.sh | bash -s -- --no-modify-path && cargo install shuttle-cli",
+    "postCreateCommand": "cargo install cargo-binstall && cargo binstall cargo-shuttle",
     "forwardPorts": [8000],
     "remoteUser": "vscode"
 } 
